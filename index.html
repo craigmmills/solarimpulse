@@ -168,7 +168,7 @@
           t.addTo(vis.getNativeMap());
 
           // update the nigh/day polygon on torque steps
-          layers[1].on('change:time', function(changes) {
+          layers[2].on('change:time', function(changes) {
             if(changes.time && !isNaN( changes.time.getTime() )) {
               var t2 = L.terminator({time: changes.time});
               t.setLatLngs(t2.getLatLngs());
